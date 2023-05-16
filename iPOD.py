@@ -10,7 +10,7 @@ def iPOD(
 
     if bunch_matrix.shape[1] == 0:
         # initialize bunch matrix if empty
-        bunch_matrix = snapshot  # np.empty([np.shape(snapshot)[0], 0])
+        bunch_matrix = snapshot.reshape(-1, 1)  # np.empty([np.shape(snapshot)[0], 0])
     else:
         # concatenate new snapshot to bunch matrix
         bunch_matrix = np.hstack((bunch_matrix, snapshot.reshape(-1, 1)))
@@ -36,7 +36,7 @@ def iPOD(
         # update POD with  bunch matrix
         else:
             M = np.dot(POD.T, bunch_matrix)
-            P = bunch - np.dot(POD, M)
+            P = bunch_matrix - np.dot(POD, M)
 
             Q_p, R_p = scipy.linalg.qr(P, mode="economic")
             Q_q = np.hstack((POD, Q_p))
