@@ -7,8 +7,7 @@ This repository contains a straightforward prototype implementation of the incre
 
 The implementation of the iPOD is based on our [MORe DWR paper](https://doi.org/10.48550/arXiv.2304.01140) and an excerpt of the algorithm is depicted below. 
 
-![iPOD_algorithm](https://github.com/Hendrik240298/Incremental_POD/assets/75631613/e76d1f8f-5093-40b6-a737-948af63a5067)
-
+![iPOD_algorithm](https://github.com/Hendrik240298/Incremental_POD/assets/75631613/de8601e9-9644-4f65-89c8-1a692fc2541f)
 
 ## iPOD for reduced basis generation
 
@@ -20,7 +19,7 @@ We demonstrate the capability of the iPOD for on-the-fly reduced basis generatio
 The easiest way to run this Jupyter Notebook is to use Google Colab. To open the notebook in Google Colab you can click on "iPOD_RB_generation.ipynb" and replace the word 'github' in the url with 'githubtocolab' or you can click on [this link](https://colab.research.google.com/github/Hendrik240298/Incremental_POD/blob/main/iPOD_RB_generation.ipynb).
 
 ### Results
-https://github.com/Hendrik240298/Incremental_POD/assets/75631613/5c4e0a07-7e1e-4f90-9cb9-2c6116560efe
+https://github.com/Hendrik240298/Incremental_POD/assets/75631613/3aefb83a-5054-428b-9039-de8fe915eb20
 
 
 ## iPOD for reduced order modeling
@@ -57,8 +56,7 @@ We run this code from $t = 0 s$ until $t = 5 s$ and we note that the first revol
 
 We then see in the following video that our incremental reduced order solution is almost indistinguishable from the full order solution and the error is a few magnitudes smaller.
 
-https://github.com/Hendrik240298/Incremental_POD/assets/42407091/60f13c69-f270-4518-8e07-ffeb660e3ab9
-
+https://github.com/Hendrik240298/Incremental_POD/assets/75631613/5716c16b-bc94-4290-ad62-03cbb3fb8d58
 
 ## Citation
 
