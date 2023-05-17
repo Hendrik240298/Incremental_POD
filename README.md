@@ -1,5 +1,5 @@
 # Incremental Proper Orthogonal Decomposition (iPOD) and its application to reduced order modeling (ROM)
-### Hendrik Fischer, Julian Roth (2023)
+### Hendrik Fischer & Julian Roth (2023)
 
 This repository contains a straightforward prototype implementation of the incremental POD to demonstrate its use in reduced order modeling.
 
@@ -16,27 +16,16 @@ The general idea of the incremental basis enrichment is to update the reduced ba
 
 We demonstrate the capability of the iPOD for on-the-fly reduced basis generation on the example of the Navier-Stokes equations. We borrow the full-order model from the FEniCS Project's [incompressible NSE tutorial](https://fenicsproject.org/pub/tutorial/html/._ftut1009.html). 
 
+### Executing the code
+The easiest way to run this Jupyter Notebook is to use Google Colab. To open the notebook in Google Colab you can click on "iPOD_RB_generation.ipynb" and replace the word 'github' in the url with 'githubtocolab' or you can click on [this link](https://colab.research.google.com/github/Hendrik240298/Incremental_POD/blob/main/iPOD_RB_generation.ipynb).
+
+### Results
+https://github.com/Hendrik240298/Incremental_POD/assets/75631613/5c4e0a07-7e1e-4f90-9cb9-2c6116560efe
+
 
 ## iPOD for reduced order modeling
 
-For our incremental reduced order model we consider the heat equation: <br>
-Find $u: [0,T] \times \bar\Omega \rightarrow \mathbb{R}$ such that
-
-$$
-\begin{aligned}
-\partial_t u  - \Delta_x u &= f \quad \text{in} \quad (0,T) \times \Omega, \\
-\qquad\qquad\quad  u &= 0 \quad \text{on} \quad (0,T) \times \partial\Omega, \\
-\qquad\qquad  u &= u_0 \quad \text{on} \quad \lbrace 0 \rbrace \times \Omega,
-\end{aligned}
-$$
-
-where $\Omega \subset \mathbb{R}^d$ with $d \in \lbrace 1, 2, 3 \rbrace$ is an open domain and the Laplacian of $u$, denoted by $\Delta_x u$, is defined as
-
-$$
-\Delta_x u = \sum_{i = 1}^d \partial_{x_i} u.
-$$
-
-More conretely, we use the model problem from Section 5.2 from the [MORe DWR paper](https://doi.org/10.48550/arXiv.2304.01140). 
+For our incremental reduced order model we consider the heat equation problem from Section 5.2 from the [MORe DWR paper](https://doi.org/10.48550/arXiv.2304.01140). 
 We have the domain $\Omega = (0,1) \times (0,1)$, homogeneous Dirichlet boundary conditions and initial conditions
 
 $$
@@ -62,10 +51,6 @@ with $x = (x_1, x_2)$, midpoint $p = (p_1, p_2) = (\frac{1}{2}+\frac{1}{4} \cos(
 The easiest way to run this Jupyter Notebook is to use Google Colab. To open the notebook in Google Colab you can click on "iPOD_ROM.ipynb" and replace the word 'github' in the url with 'githubtocolab' or you can click on [this link](https://colab.research.google.com/github/Hendrik240298/Incremental_POD/blob/main/iPOD_ROM.ipynb).
 
 ### Results
-#### iPOD basis generation for Navier-Stokes equations
-https://github.com/Hendrik240298/Incremental_POD/assets/75631613/5c4e0a07-7e1e-4f90-9cb9-2c6116560efe
-
-#### Incremental reduced order modeling for heat eqaution
 We run this code from $t = 0 s$ until $t = 5 s$ and we note that the first revolution of the heat source is completed after 1 second. Therefore, we see in the temporal evolution of the POD basis size that the reduced basis only grows in the first second and then remains constant.
 
 ![heat_reduced_basis](https://github.com/Hendrik240298/Incremental_POD/blob/main/media/reduced_basis_heat.png)
@@ -75,4 +60,21 @@ We then see in the following video that our incremental reduced order solution i
 https://github.com/Hendrik240298/Incremental_POD/assets/42407091/60f13c69-f270-4518-8e07-ffeb660e3ab9
 
 
+## Citation
 
+    @misc{kuhl2023incremental,
+          title={An {I}ncremental {S}ingular {V}alue {D}ecomposition {A}pproach for {L}arge-{S}cale {S}patially {P}arallel \& {D}istributed but {T}emporally {S}erial {D}ata--{A}pplied to {T}echnical {F}lows},
+          author={K{\"u}hl, Niklas and Fischer, Hendrik and Hinze, Michael and Rung, Thomas},
+          year={2023, \url{https://doi.org/10.48550/ARXIV.2302.09149}},
+          publisher = {arXiv},
+          copyright = {arXiv.org perpetual, non-exclusive license}
+    }
+
+    @misc{FiRoWiChaFau2023,
+          title={{MORe} {DWR}: Space-time goal-oriented error control for incremental {POD}-based {ROM}}, 
+          author={Hendrik Fischer and Julian Roth and Thomas Wick and Ludovic Chamoin and Amelie Fau},
+          year={2023, \url{https://doi.org/10.48550/ARXIV.2304.01140}},
+          eprint={2304.01140},
+          archivePrefix={arXiv},
+          primaryClass={math.NA}
+    }
