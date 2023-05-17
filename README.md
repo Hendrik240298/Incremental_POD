@@ -21,7 +21,6 @@ The easiest way to run this Jupyter Notebook is to use Google Colab. To open the
 ### Results
 https://github.com/Hendrik240298/Incremental_POD/assets/75631613/3aefb83a-5054-428b-9039-de8fe915eb20
 
-
 ## iPOD for reduced order modeling
 
 For our incremental reduced order model we consider the heat equation problem from Section 5.2 from the [MORe DWR paper](https://doi.org/10.48550/arXiv.2304.01140). 
@@ -86,4 +85,4 @@ Should you have any questions do not hesitate to send us an email at
     
 ## Acknowledgements
 
-This work arises from the [Scientific Computing Group](https://www.ifam.uni-hannover.de/en/research/scientific-computing) headed by [Professor Thomas Wick](https://thomaswick.org) at the Institute of Applied Mathematics at the Leibniz University Hannover. In addition to internal support and resources, we acknowledge the funding of the German Research Foundation (DFG) within the framework of the [International Research Training Group on Computational Mechanics Techniques in High Dimensions GRK 2657](https://www.irtg2657.uni-hannover.de/en/)  under Grant Number 433082294.
+This work arises from the [Scientific Computing Group](https://www.ifam.uni-hannover.de/en/research/scientific-computing) headed by [Professor Thomas Wick](https://thomaswick.org) at the Institute of Applied Mathematics at the [Leibniz University Hannover](https://www.uni-hannover.de/en/). In addition to internal support and resources, we acknowledge the funding of the German Research Foundation (DFG) within the framework of the [International Research Training Group on Computational Mechanics Techniques in High Dimensions GRK 2657](https://www.irtg2657.uni-hannover.de/en/)  under Grant Number 433082294.
