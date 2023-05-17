@@ -19,7 +19,8 @@ We demonstrate the capability of the iPOD for on-the-fly reduced basis generatio
 The easiest way to run this Jupyter Notebook is to use Google Colab. To open the notebook in Google Colab you can click on "iPOD_RB_generation.ipynb" and replace the word 'github' in the url with 'githubtocolab' or you can click on [this link](https://colab.research.google.com/github/Hendrik240298/Incremental_POD/blob/main/iPOD_RB_generation.ipynb).
 
 ### Results
-https://github.com/Hendrik240298/Incremental_POD/assets/75631613/3aefb83a-5054-428b-9039-de8fe915eb20
+
+<img src="media/navier-stokes.gif" alt="navier-stokes"/>
 
 ## iPOD for reduced order modeling
 
@@ -55,7 +56,7 @@ We run this code from $t = 0 s$ until $t = 5 s$ and we note that the first revol
 
 We then see in the following video that our incremental reduced order solution is almost indistinguishable from the full order solution and the error is a few magnitudes smaller.
 
-https://github.com/Hendrik240298/Incremental_POD/assets/75631613/5716c16b-bc94-4290-ad62-03cbb3fb8d58
+<img src="media/heat.gif" alt="heat"/>
 
 ## Citation
 
