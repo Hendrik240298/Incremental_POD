@@ -79,5 +79,12 @@ https://github.com/Hendrik240298/Incremental_POD/assets/42407091/60f13c69-f270-4
           primaryClass={math.NA}
     }
     
+## Contact
+
+Should you have any questions do not hesitate to send us an email at
+
+    fischer@ifam.uni-hannover.de
+    roth@ifam.uni-hannover.de
+    
 ## Funding
 We acknowledge the funding of the German Research Foundation (DFG) within the framework of the [International Research Training Group on Computational Mechanics Techniques in High Dimensions GRK 2657](https://www.irtg2657.uni-hannover.de/en/) under Grant Number 433082294.
