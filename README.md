@@ -78,3 +78,6 @@ https://github.com/Hendrik240298/Incremental_POD/assets/42407091/60f13c69-f270-4
           archivePrefix={arXiv},
           primaryClass={math.NA}
     }
+    
+## Funding
+We acknowledge the funding of the German Research Foundation (DFG) within the framework of the [International Research Training Group on Computational Mechanics Techniques in High Dimensions GRK 2657](https://www.irtg2657.uni-hannover.de/en/) under Grant Number 433082294.
