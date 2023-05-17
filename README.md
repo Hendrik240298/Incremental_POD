@@ -5,14 +5,14 @@ This repository contains a straightforward prototype implementation of the incre
 
 ## The incremental POD algorithm
 
-The implementation of the iPOD is based on our work [[1](https://doi.org/10.48550/arXiv.2304.01140)] and an excerpt of the algorithm is depicted below. 
+The implementation of the iPOD is based on our [MORe DWR paper](https://doi.org/10.48550/arXiv.2304.01140) and an excerpt of the algorithm is depicted below. 
 
 ![iPOD_algorithm](https://github.com/Hendrik240298/Incremental_POD/assets/75631613/e76d1f8f-5093-40b6-a737-948af63a5067)
 
 
 ## iPOD for reduced basis generation
 
-The general idea of the incremental basis enrichment is to update the reduced basis whenever a new solution snapshot is available. Thus, we do not need to store all snapshots to build a basis, but can to it gradually with only the latest snapshot available. Leveraging this, we additionally introduce adaptive basis size determination and bunch updates. The latter bundles mutliple snapshots for one update to improve performance. For further information we refer to our works [[1](https://doi.org/10.48550/arXiv.2304.01140), [2](https://arxiv.org/abs/2302.09149)].
+The general idea of the incremental basis enrichment is to update the reduced basis whenever a new solution snapshot is available. Thus, we do not need to store all snapshots to build a basis, but can to it gradually with only the latest snapshot available. Leveraging this, we additionally introduce adaptive basis size determination and bunch updates. The latter bundles mutliple snapshots for one update to improve performance. For further information we refer to our works [[Fischer et al.](https://doi.org/10.48550/arXiv.2304.01140), [Kühl et al.](https://arxiv.org/abs/2302.09149)].
 
 We demonstrate the capability of the iPOD for on-the-fly reduced basis generation on the example of the Navier-Stokes equations. We borrow the full-order model from the FEniCS Project's [incompressible NSE tutorial](https://fenicsproject.org/pub/tutorial/html/._ftut1009.html). 
 
