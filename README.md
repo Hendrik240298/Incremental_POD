@@ -5,13 +5,13 @@ This repository contains a straightforward prototype implementation of the incre
 
 ## The incremental POD algorithm
 
-The implementation of the iPOD is based on our [MORe DWR paper](https://doi.org/10.48550/arXiv.2304.01140) and an excerpt of the algorithm is depicted below. 
+The implementation of the iPOD is based on our [MORe DWR paper](https://doi.org/10.48550/arXiv.2304.01140), which is mainly influenced by the work of [Kühl et al.](https://arxiv.org/abs/2302.09149) An excerpt of the algorithm is depicted below. 
 
 ![iPOD_algorithm](https://github.com/Hendrik240298/Incremental_POD/assets/75631613/de8601e9-9644-4f65-89c8-1a692fc2541f)
 
 ## iPOD for reduced basis generation
 
-The general idea of the incremental basis enrichment is to update the reduced basis whenever a new solution snapshot is available. Thus, we do not need to store all snapshots to build a basis, but can to it gradually with only the latest snapshot available. Leveraging this, we additionally introduce adaptive basis size determination and bunch updates. The latter bundles mutliple snapshots for one update to improve performance. For further information we refer to our works [[Fischer et al.](https://doi.org/10.48550/arXiv.2304.01140), [Kühl et al.](https://arxiv.org/abs/2302.09149)].
+The general idea of the incremental basis enrichment is to update the reduced basis whenever a new solution snapshot is available. Thus, we do not need to store all snapshots to build a basis, but can to it gradually with only the latest snapshot available. Leveraging this, we additionally introduce adaptive basis size determination and bunch updates. The latter bundles multiple snapshots for one update to improve performance. For further information, we refer to our work [Fischer et al.](https://doi.org/10.48550/arXiv.2304.01140) and to [Kühl et al.](https://arxiv.org/abs/2302.09149). Especially for an in-depth discussion of the algorithm and its parallelization, we refer to the latter.
 
 We demonstrate the capability of the iPOD for on-the-fly reduced basis generation on the example of the Navier-Stokes equations. We borrow the full-order model from the FEniCS Project's [incompressible NSE tutorial](https://fenicsproject.org/pub/tutorial/html/._ftut1009.html). 
 
@@ -86,4 +86,5 @@ Should you have any questions do not hesitate to send us an email at
     
 ## Acknowledgements
 
-This work arises from the [Scientific Computing Group](https://www.ifam.uni-hannover.de/en/research/scientific-computing) headed by [Professor Thomas Wick](https://thomaswick.org) at the Institute of Applied Mathematics at the [Leibniz University Hannover](https://www.uni-hannover.de/en/). In addition to internal support and resources, we acknowledge the funding of the German Research Foundation (DFG) within the framework of the [International Research Training Group on Computational Mechanics Techniques in High Dimensions GRK 2657](https://www.irtg2657.uni-hannover.de/en/)  under Grant Number 433082294.
+This work arises from the [Scientific Computing Group](https://www.ifam.uni-hannover.de/en/research/scientific-computing) headed by [Professor Thomas Wick](https://thomaswick.org) at the Institute of Applied Mathematics at the [Leibniz University Hannover](https://www.uni-hannover.de/en/). In addition to internal support and resources, we acknowledge the funding of the German Research Foundation (DFG) within the framework of the [International Research Training Group on Computational Mechanics Techniques in High Dimensions GRK 2657](https://www.irtg2657.uni-hannover.de/en/) under Grant Number 433082294. 
+In addition, Hendrik Fischer acknowledges the collaboration with the [Institute for Fluid Dynamics and Ship Theory (FDS) at the Hamburg University of Technology (TUHH)](https://www.tuhh.de/fds/home/).
