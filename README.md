@@ -87,4 +87,4 @@ Should you have any questions do not hesitate to send us an email at
 ## Acknowledgements
 
 This work arises from the [Scientific Computing Group](https://www.ifam.uni-hannover.de/en/research/scientific-computing) headed by [Professor Thomas Wick](https://thomaswick.org) at the Institute of Applied Mathematics at the [Leibniz University Hannover](https://www.uni-hannover.de/en/). In addition to internal support and resources, we acknowledge the funding of the German Research Foundation (DFG) within the framework of the [International Research Training Group on Computational Mechanics Techniques in High Dimensions GRK 2657](https://www.irtg2657.uni-hannover.de/en/) under Grant Number 433082294. 
-In addition, Hendrik Fischer acknowledges the collaboration with the [Institute for Fluid Dynamics and Ship Theory (FDS) at the Hamburg University of Technology (TUHH)](https://www.tuhh.de/fds/home/).
+In addition, Hendrik Fischer acknowledges the collaboration with the [Institute for Fluid Dynamics and Ship Theory](https://www.tuhh.de/fds/home/) at the [Hamburg University of Technology (TUHH)](https://www.tuhh.de/tuhh/en/tu-hamburg).
