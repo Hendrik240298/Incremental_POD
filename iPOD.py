@@ -51,7 +51,7 @@ def iPOD(
             K = np.hstack((S0, MR_p))
 
             # check the orthogonality of Q_q heuristically
-            if np.inner(Q_q[:, 0], Q_q[:, -1]) >= 1e-10:
+            if np.abs(np.inner(Q_q[:, 0], Q_q[:, -1])) >= 1e-10:
                 Q_q, R_q = scipy.linalg.qr(Q_q, mode="economic")
                 K = np.matmul(R_q, K)
 
