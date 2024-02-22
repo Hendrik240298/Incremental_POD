@@ -60,23 +60,28 @@ We then see in the following video that our incremental reduced order solution i
 
 ## Citation
 
-    @misc{kuhl2023incremental,
-          title={An {I}ncremental {S}ingular {V}alue {D}ecomposition {A}pproach for {L}arge-{S}cale {S}patially {P}arallel \& {D}istributed but {T}emporally {S}erial {D}ata--{A}pplied to {T}echnical {F}lows},
-          author={K{\"u}hl, Niklas and Fischer, Hendrik and Hinze, Michael and Rung, Thomas},
-          year={2023, \url{https://doi.org/10.48550/ARXIV.2302.09149}},
-          publisher = {arXiv},
-          copyright = {arXiv.org perpetual, non-exclusive license}
+    @article{kuhl2024incremental,
+        title = {An {I}ncremental {S}ingular {V}alue {D}ecomposition {A}pproach for {L}arge-{S}cale {S}patially {P}arallel \& {D}istributed but {T}emporally {S}erial {D}ata--{A}pplied to {T}echnical {F}lows},
+        journal = {Comput. Phys. Commun.},
+        volume = {296},
+        pages = {109022},
+        year = {2024},
+        issn = {0010-4655},
+        doi = {https://doi.org/10.1016/j.cpc.2023.109022},
+        author = {Niklas K{\"u}hl and Hendrik Fischer and Michael Hinze and Thomas Rung},    
     }
 
-    @misc{FiRoWiChaFau2023,
-          title={{MORe} {DWR}: Space-time goal-oriented error control for incremental {POD}-based {ROM}}, 
-          author={Hendrik Fischer and Julian Roth and Thomas Wick and Ludovic Chamoin and Amelie Fau},
-          year={2023, \url{https://doi.org/10.48550/ARXIV.2304.01140}},
-          eprint={2304.01140},
-          archivePrefix={arXiv},
-          primaryClass={math.NA}
+    @article{FiRoWiChaFau2024,
+        title = {{MORe} {DWR}: {Space}-time goal-oriented error control for incremental {POD}-based {ROM} for time-averaged goal functionals},
+        journal = {J. Comput. Phys.},
+        volume = {504},
+        pages = {112863},
+        year = {2024},
+        issn = {0021-9991},
+        doi = {https://doi.org/10.1016/j.jcp.2024.112863},
+        author = {Hendrik Fischer and Julian Roth and Thomas Wick and Ludovic Chamoin and Amelie Fau},
     }
-    
+
 ## Contact
 
 Should you have any questions do not hesitate to send us an email at
